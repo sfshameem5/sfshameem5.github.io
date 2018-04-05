@@ -26,3 +26,7 @@ $('#progress').on('click', () => {
 	$('.completed').fadeOut();
 	$('.progress').fadeIn();
 })
+
+$('#all').on('click', () => {
+	$('.project-container').show();
+})

@@ -253,11 +253,11 @@ Media Queries
 		margin: 0 2%;
 	}
 
-	.project-container:last-child {
+	./*project-container:last-child {
 		display: block;
 		margin: 0 auto;
 	}
-}
+*/}
 
 @media (min-width: 1024px) {
 	header h2 {
