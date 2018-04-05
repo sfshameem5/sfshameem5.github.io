@@ -1,3 +1,5 @@
+// Set up typing 
+
 var options = {
 	strings: [
 	"Web Applications", 
@@ -11,3 +13,16 @@ var options = {
 }
 
 var typed = new Typed("#typer", options);
+
+
+// Set up project sorting through buttons. 
+
+$('#completed').on('click', () => {
+	$('.completed').show();
+	$('.progress').hide();
+})
+
+$('#progress').on('click', () => {
+	$('.completed').hide();
+	$('.progress').show();
+})

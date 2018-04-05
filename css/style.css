@@ -90,6 +90,10 @@ main h3 {
 Portfolio
 **********/
 
+h3 + p {
+	text-align: center;
+}
+
 .button-container {
 	display: flex;
 	border-radius: 10px;
@@ -152,19 +156,19 @@ Project Container
 }
 
 .project-description a {
+	text-align: center;
 	text-decoration: none;
 	border: 1px solid #0091EA;
 	color: #0091EA;
 	padding: 5px 10px;
 	border-radius: 33px;
-	width: 42%;
+	width: 50%;
 	margin: 20px auto;
 	/*transition: all .2s;*/
 }
 
 .project-description a:hover,
 .project-description a:active {
-	width: 50%;
 	transition: all .5s;
 	padding: 10px 20px;
 	border-color: transparent;
@@ -198,7 +202,8 @@ footer p {
 .social-icons {
 	display: flex;
 	justify-content: space-around;
-	margin-top: 30px;
+	max-width: 300px;
+	margin: 30px auto 0;
 }
 
 .social-icons a {
@@ -215,4 +220,44 @@ footer p {
 .social-icons a:hover,
 .social-icons a:focus {
 	opacity: 1;
+}
+
+/**********
+Media Queries
+**********/
+
+@media (min-width: 500px) {
+	.project-description h4,
+	.project-description p {
+		font-size: 1em;
+	}
+}
+
+@media (min-width: 768px) {
+
+	header h2 {
+		font-size: 1.3rem;
+	}	
+	
+	.project-container {
+		display: inline-block;
+		max-width: 45%;
+		margin: 0 2%;
+	}
+
+	.project-container:last-child {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 1024px) {
+	header h2 {
+		font-size: 1.7rem;
+	}
+
+	.project-container {
+		max-width: 30%;
+		margin: 0 1%;
+	}
 }
