@@ -50,9 +50,12 @@ Header Styles
 **********/
 
 header {
+	width: 100%;
 	background: #424242;
 	color: #fff;
 	padding: 50px 0;
+	background: linear-gradient(rgba(0,0,0,.3) 10%, rgba(0,0,0,.9) 100%), 
+							top / cover no-repeat url('../img/background.jpg');
 }
 
 header h2 {
@@ -84,6 +87,7 @@ main h3 {
 	padding-top: 25px;
 	width: 100%;
 	font-size: 1.3em;
+	margin-top: 0;
 }
 
 /**********
@@ -115,6 +119,7 @@ h3 + p {
 	border-color: transparent;
 	padding: 10px;
 	opacity: .8;
+	cursor: pointer;
 }
 
 .button-container button:active,
@@ -169,8 +174,10 @@ Project Container
 
 .project-description a:hover,
 .project-description a:active {
+	width: 55%;
 	transition: all .5s;
-	padding: 10px 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 	border-color: transparent;
 	background: #0091EA;
 	color: #fff;
@@ -236,6 +243,7 @@ Media Queries
 @media (min-width: 768px) {
 
 	header h2 {
+		padding: 100px 0;
 		font-size: 1.3rem;
 	}	
 	

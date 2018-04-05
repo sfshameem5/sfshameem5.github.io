@@ -18,11 +18,11 @@ var typed = new Typed("#typer", options);
 // Set up project sorting through buttons. 
 
 $('#completed').on('click', () => {
-	$('.completed').show();
-	$('.progress').hide();
+	$('.completed').fadeIn();
+	$('.progress').fadeOut();
 })
 
 $('#progress').on('click', () => {
-	$('.completed').hide();
-	$('.progress').show();
+	$('.completed').fadeOut();
+	$('.progress').fadeIn();
 })
