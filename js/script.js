@@ -30,3 +30,10 @@ $('#progress').on('click', () => {
 $('#all').on('click', () => {
 	$('.project-container').show();
 })
+
+
+// Make progress buttons disabled on document load. 
+
+$(window).on('load', function() {
+	$('.progress a').removeAttr("href").css({backgroundColor: "#eee", cursor: "not-allowed"});
+});

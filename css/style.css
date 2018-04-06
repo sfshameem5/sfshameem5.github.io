@@ -172,8 +172,8 @@ Project Container
 	/*transition: all .2s;*/
 }
 
-.project-description a:hover,
-.project-description a:active {
+div.completed a:hover,
+div.completed a:active {
 	width: 55%;
 	transition: all .5s;
 	padding-left: 20px;
@@ -181,6 +181,10 @@ Project Container
 	border-color: transparent;
 	background: #0091EA;
 	color: #fff;
+}
+
+div.progress a:hover {
+	transition: none;
 }
 
 /**********
